@@ -1,10 +1,12 @@
 import React from "react"
+import Navbar from "./NavBar"
+
 
 class Formulaire extends React.Component {
     render() {
         return (
             <div>
-                page du formulaire
+                <Navbar />
             </div>
         )
     }
