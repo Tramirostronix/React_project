@@ -1,3 +1,27 @@
 .active {
     color: brown;
 }
+
+.my-container{
+
+border: 1px solid green; 
+
+}
+
+.my-row {
+    border: 3px solid red; 
+}
+
+.my-col {
+    border: 3px solid blue; 
+}
+
+body{
+    margin: 20px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

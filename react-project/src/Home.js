@@ -1,13 +1,21 @@
 import React from "react"
-import NavBar from "./NavBar"
-import Todolist from "./Todolist"
+import NavMain from "./NavMain"
+import Banniere from "./Banniere"
+import Logout from "./Logout"
 
 class Home extends React.Component {
     render(){
         return(
             <div>
-                <NavBar />
-                <Todolist />
+                 <div className="row my-row">
+                   <div className ="col-11 my-col">
+            <Banniere />
+                        </div>
+                   <div className ="col-1 my-col">
+            <Logout />
+                        </div>
+               </div> 
+                <NavMain />
             </div>
         )
     }

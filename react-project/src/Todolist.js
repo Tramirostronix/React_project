@@ -55,7 +55,7 @@ class Todolist extends React.Component {
     
     render() {
         return(
-            <div>
+            <div className>
                 <h3>Todolist</h3>
                 <form className="form-row align-items-center">
                     <input

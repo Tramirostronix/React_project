@@ -8,13 +8,17 @@ class Navbar extends React.Component {
     render() {
         return(
             <div>
-                <nav>
+                <nav>                    
+                    <div className="col-12 my-col nav">
                 <NavLink to = "/Home"
                 activeClassName="active"
                 >Home</NavLink>
+                    </div>
+                    <div className="col-12 my-col nav">
                 <NavLink to= "/Formulaire"
                 activeClassName="active"
                 >Formulaire</NavLink>
+                    </div>
                 </nav>
             </div>
         )
