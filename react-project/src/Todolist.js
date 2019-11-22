@@ -1,76 +1,93 @@
 import React from "react"
+import { thisExpression } from "@babel/types"
 
 //classe du Wiget Todolist
 
 class Todolist extends React.Component {
     constructor(props) {
         super(props)
-        this.state= {
-            nomTache:"",
-            taches: [] 
+        this.state = {
+            nomTache: "",
+            taches: [],
+            isFieldEmpty: true
         }
     }
-    
+
     //permet la saisie au clavier 
     onChange(event) {
-        this.setState({
-            nomTache: event.target.value
-        })
+        console.log(event.target.value);
+        if (event.target.value === "") {
+            this.setState({ isFieldEmpty: true, nomTache: '' })
+
+        } else {
+            this.setState({ isFieldEmpty: false, nomTache: event.target.value })
+        }
     }
 
     //permet d'ajouter une tache dans le tableau
     //sans recharger la page
     //en vidant le champs à chaque ajout
-    ajouterTache(event) { 
+    ajouterTache(event) {
         event.preventDefault()
         this.setState({
             nomTache: "",
-            taches: [...this.state.taches, this.state.nomTache]
+            taches: [...this.state.taches, this.state.nomTache],
+            isFieldEmpty: true,
+            nomTache: ''
         })
-        
     }
 
+
     supprimerTaches(event) {
-        event.preventDefault() 
-        const array= this.state.taches
-        const index= array.indexOf(event.target.value)
+        event.preventDefault()
+        const array = this.state.taches
+        const index = array.indexOf(event.target.value)
         array.splice(index, 1)
         this.setState({
-            taches: array 
-        })       
+            taches: array
+        })
     }
 
     //affichage des taches de la TODO
     afficherTaches() {
         return this.state.taches.map((tache) => {
-            return(
+            return (
+                <div className="col-3 my-col">
                 <div className="list-group-item" key={tache}>
-                    {tache} | <button className="btn btn-danger" onClick={this.supprimerTaches.bind(this)}>X</button>
+                    {tache}<button className="btn btn-danger" onClick={this.supprimerTaches.bind(this)}>X</button>
+                </div>
                 </div>
             )
         })
     }
 
-  
-    
+
+
     render() {
-        return(
-            <div className>
-                <h3>Todolist</h3>
-                <form className="form-row align-items-center">
-                    <input
-                    className="form-control mb-1"
-                    value={this.state.nomTache} 
-                    type="text" 
-                    placeholder="Ajout tache"
-                    onChange={this.onChange.bind(this)} 
-                    />
-                    <button className="btn btn-primary" onClick={this.ajouterTache.bind(this)}>Add</button>
-                </form>
-                <div className="List-group">
-                   {this.afficherTaches()} 
+        return (
+            <div className="widthComponent">
+                <div className="row my-row3">
+                    <div className="col my-col">
+                        <h3 id='center'>Todolist</h3>
+                    </div>
                 </div>
-            </div>
+                <div className="row my-row4">
+                    <form>
+                        <input
+                            value={this.state.nomTache}
+                            type="text"
+                            placeholder="Ajout tache"
+                            onChange={this.onChange.bind(this)}
+                        />
+                        {!this.state.isFieldEmpty && <button className="btn btn-primary" onClick={this.ajouterTache.bind(this)}>Ajouter</button>}
+                    </form>
+                </div>
+                <div className="row my-row">
+                    <div className="List-group">
+                        {this.afficherTaches()}
+                    </div>
+                </div>
+            </div >
         )
     }
 }

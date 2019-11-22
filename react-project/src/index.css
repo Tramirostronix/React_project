@@ -1,7 +1,7 @@
 .active {
     color: brown;
 }
-
+/*
 .my-container{
 
 border: 1px solid green; 
@@ -12,16 +12,39 @@ border: 1px solid green;
     border: 3px solid red; 
 }
 
+.my-row2 {
+    border: 5px solid purple; 
+}
+
+.my-row3 {
+    border: 5px solid yellow; 
+}
+
+.my-row4 {
+    border: 5px solid coral; 
+    
+}
+
+
 .my-col {
     border: 3px solid blue; 
 }
-
+*/
 body{
     margin: 20px;
 }
 
-.img-responsive {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.my-row .my-col2 {
+ padding-right:0;
+ padding-left: 0;
+}
+
+#center {
+    text-align: center;
+}
+
+.widthComponent {
+    width: fit-content;
+    /*margin-left: auto;
+    margin-right: auto; */
 }
