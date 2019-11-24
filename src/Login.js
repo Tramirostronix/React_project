@@ -1,18 +1,21 @@
 import React from "react"
 import Home from "./Home"
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 import Banniere from "./Banniere"
-import Todolist from "./Todolist"
+import Search from "./Search"
+import {Container, Row, Col} from "react-bootstrap"
 
 class Login extends React.Component {
     render() {
         return (
             <div>
-            
             <Banniere />
                 Bienvenu veuillez vous connecter
-            <Link to="/Home"><button>Login</button></Link>
+            <NavLink to="/Home"><button>Login</button></NavLink>
+            <Search />
+        
             </div> 
+            
             
             
         )

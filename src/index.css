@@ -1,7 +1,7 @@
 .active {
     color: brown;
 }
-/*
+
 .my-container{
 
 border: 1px solid green; 
@@ -11,6 +11,7 @@ border: 1px solid green;
 .my-row {
     border: 3px solid red; 
 }
+
 
 .my-row2 {
     border: 5px solid purple; 
@@ -27,9 +28,9 @@ border: 1px solid green;
 
 
 .my-col {
-    border: 3px solid blue; 
+    border: 7px solid blue; 
 }
-*/
+
 body{
     margin: 20px;
 }
@@ -42,6 +43,8 @@ body{
 #center {
     text-align: center;
 }
+
+
 
 .widthComponent {
     width: fit-content;

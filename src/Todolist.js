@@ -1,5 +1,5 @@
 import React from "react"
-import { thisExpression } from "@babel/types"
+import { Row, Col } from "react-bootstrap"
 
 //classe du Wiget Todolist
 
@@ -52,11 +52,13 @@ class Todolist extends React.Component {
     afficherTaches() {
         return this.state.taches.map((tache) => {
             return (
-                <div className="col-3 my-col">
-                <div className="list-group-item" key={tache}>
-                    {tache}<button className="btn btn-danger" onClick={this.supprimerTaches.bind(this)}>X</button>
+
+                <div className="col-12 my-col">
+                    <div className="list-group-item" key={tache}>
+                        {tache}<button className="btn btn-danger" onClick={this.supprimerTaches.bind(this)}>X</button>
+                    </div>
                 </div>
-                </div>
+
             )
         })
     }
@@ -66,26 +68,26 @@ class Todolist extends React.Component {
     render() {
         return (
             <div className="widthComponent">
-                <div className="row my-row3">
-                    <div className="col my-col">
+                <Row>
+                    <Col>
                         <h3 id='center'>Todolist</h3>
-                    </div>
-                </div>
-                <div className="row my-row4">
-                    <form>
-                        <input
-                            value={this.state.nomTache}
-                            type="text"
-                            placeholder="Ajout tache"
-                            onChange={this.onChange.bind(this)}
-                        />
-                        {!this.state.isFieldEmpty && <button className="btn btn-primary" onClick={this.ajouterTache.bind(this)}>Ajouter</button>}
-                    </form>
-                </div>
-                <div className="row my-row">
-                    <div className="List-group">
-                        {this.afficherTaches()}
-                    </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <form>
+                            <input
+                                value={this.state.nomTache}
+                                type="text"
+                                placeholder="Ajout tache"
+                                onChange={this.onChange.bind(this)}
+                            />
+                            {!this.state.isFieldEmpty && <button className="btn btn-primary" onClick={this.ajouterTache.bind(this)}>Ajouter</button>}
+                        </form>
+                    </Col>
+                </Row>
+                <div className="List-group">
+                    {this.afficherTaches()}
                 </div>
             </div >
         )

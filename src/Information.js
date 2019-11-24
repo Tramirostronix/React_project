@@ -4,7 +4,7 @@ class Information extends React.Component{
     render() {
         return (
             
-            <div className="row my-row">
+            <div>
                 Information artiste 
             </div>
         )
