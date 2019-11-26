@@ -1,7 +1,7 @@
 import React from "react"
-import Home from "./Home"
-import Formulaire from "./Formulaire"
-import Login from "./Login"
+import Home from "../Home"
+import Formulaire from "../components/Formulaire"
+import Login from "../components/Login"
 import { NavLink } from "react-router-dom"
 import { Row, Col } from "react-bootstrap"
 

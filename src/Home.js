@@ -1,7 +1,7 @@
 import React from "react"
-import NavMain from "./NavMain"
-import Banniere from "./Banniere"
-import Logout from "./Logout"
+import NavMain from "./components/NavMain"
+import Banniere from "./components/Banniere"
+import Logout from "./components/Logout"
 import { Row, Col } from "react-bootstrap"
 
 class Home extends React.Component {

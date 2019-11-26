@@ -1,7 +1,7 @@
 import React from "react"
-import Navbar from "./NavBar"
-import Banniere from "./Banniere"
-import Logout from "./Logout"
+import Navbar from "../components/NavBar"
+import Banniere from "../components/Banniere"
+import Logout from "../components/Logout"
 import { Row, Col } from "react-bootstrap"
 
 class Formulaire extends React.Component {

@@ -1,5 +1,5 @@
 import React from "react"
-import { Row, Col } from "react-bootstrap"
+import {Container, Row, Col } from "react-bootstrap"
 
 //classe du Wiget Todolist
 
@@ -68,7 +68,8 @@ class Todolist extends React.Component {
     render() {
         return (
             <div className="widthComponent">
-                <Row>
+                <Container className="my-container">
+                <Row className="my-row">
                     <Col>
                         <h3 id='center'>Todolist</h3>
                     </Col>
@@ -89,6 +90,7 @@ class Todolist extends React.Component {
                 <div className="List-group">
                     {this.afficherTaches()}
                 </div>
+                </Container>
             </div >
         )
     }
