@@ -3,12 +3,13 @@ import Home from "../Home"
 import Formulaire from "../components/Formulaire"
 import Login from "../components/Login"
 import { NavLink } from "react-router-dom"
-import { Row, Col } from "react-bootstrap"
+import {Container, Row, Col } from "react-bootstrap"
 
 class Navbar extends React.Component {
     render() {
         return (
             <div>
+                <Container className="my-container">
                 <nav>
                     <Row>
                         <NavLink to="/Home"
@@ -21,6 +22,7 @@ class Navbar extends React.Component {
                         >Formulaire</NavLink>
                     </Row>
                 </nav>
+                </Container>
             </div>
         )
     }

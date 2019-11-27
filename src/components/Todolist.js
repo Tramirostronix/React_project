@@ -33,7 +33,7 @@ class Todolist extends React.Component {
             nomTache: "",
             taches: [...this.state.taches, this.state.nomTache],
             isFieldEmpty: true,
-            nomTache: ''
+            nomTache: ""
         })
     }
 
