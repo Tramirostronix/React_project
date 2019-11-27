@@ -19,10 +19,10 @@ class Home extends React.Component {
                         </Col>
                     </Row>
                     <Row className="my-row2">
-                        <Col className="my-col">
+                        <Col sm="2" className="my-col">
                             <NavBar />
                         </Col>
-                        <Col className="my-col">
+                        <Col sm="10" className="my-col">
                             <Main />
                         </Col>
                     </Row>
