@@ -67,25 +67,25 @@ class Todolist extends React.Component {
 
     render() {
         return (
-            <div className="widthComponent">
-                <Container className="my-container">
-                <Row className="my-row">
+            <div className="h-100">
+                <Container>
+                <Row>
                     <Col>
                         <h3 id='center'>Todolist</h3>
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
+                <Row className="my-row">
+                      
                         <form>
                             <input
                                 value={this.state.nomTache}
                                 type="text"
-                                placeholder="Ajout tache"
+                                placeholder="My tasks ..."
                                 onChange={this.onChange.bind(this)}
                             />
                             {!this.state.isFieldEmpty && <button className="btn btn-primary" onClick={this.ajouterTache.bind(this)}>Ajouter</button>}
                         </form>
-                    </Col>
+                    
                 </Row>
                 <div className="List-group">
                     {this.afficherTaches()}

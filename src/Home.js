@@ -10,14 +10,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Container className="my-container">
-                    <Row className="my-row">
-                        <Col>
                             <Banniere />
-                        </Col>
-                        <Col>
-                            <Logout />
-                        </Col>
-                    </Row>
                     <Row className="my-row2">
                         <Col sm="2" className="my-col">
                             <NavBar />

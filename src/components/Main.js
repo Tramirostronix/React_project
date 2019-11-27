@@ -12,23 +12,25 @@ class Main extends React.Component {
         return (
             <div>
                 <main>
-                    <Container className="my-container">
-                        <Row className="my-row">
-                            <Row className="my-row2">
-                                <Col sm="4" className="my-col">
+                    <Container>
+                        <Row>
+                            <Row>
+                                <Col xs="12" sm="12" md="4">
                                     <Row className="my-row3">
-                                        <Col sm="12">
+                                        <Col xs="12" sm="12" md="12">
                                             <UsersAndSensorsNumber />
                                         </Col>
-                                        <Col sm="12">
+                                        <Col xs="11" sm="12" md="12">
                                             <ChartsPieLocalisation />
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col sm="4" className="my-col">
+
+                                <Col xs="" sm="12" md="4" className="d-none d-md-block">
                                     <WrapLocalTime />
                                 </Col>
-                                <Col sm="4" className="my-col">
+
+                                <Col xs="12" sm="12" md="4" className="my-col">
                                     <Todolist />
                                 </Col>
                             </Row>

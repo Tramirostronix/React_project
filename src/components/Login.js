@@ -38,9 +38,7 @@ class Login extends React.Component {
         return (
             <div>
 
-                <Banniere
-                    userInput={this.state.userInput}
-                />
+                <Banniere />
                 Bienvenu veuillez vous connecter
 
             <input
