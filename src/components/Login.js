@@ -3,7 +3,8 @@ import Home from "../Home"
 import {NavLink} from "react-router-dom"
 import Banniere from "../components/Banniere"
 import {Container, Row, Col} from "react-bootstrap"
-import UsersAndSensorsNumber from "./UsersAndSensorsNumber"
+import ChartsTooltipCountries from "./ChartsTooltipCountries"
+import WrapLocalTime from "./WrapLocalTime"
 
 
 class Login extends React.Component {
@@ -18,8 +19,10 @@ class Login extends React.Component {
         
             </div> 
 */
+           
+
             <div>
-               <UsersAndSensorsNumber />
+                <WrapLocalTime />
             </div>
 
             

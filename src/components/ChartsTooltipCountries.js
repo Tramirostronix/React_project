@@ -7,7 +7,7 @@ import {Container, Row, Col, Card } from "react-bootstrap"
 
 const data = [
   {
-    id: 'Arg' , VenteParPays: 2400,  title: "Courbe"
+    id: 'Arg' , VenteParPays: 2400, 
   },
   {
     id: 'Col', VenteParPays: 1398

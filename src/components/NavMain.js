@@ -4,6 +4,8 @@ import Todolist from "../components/Todolist"
 import { Container, Row, Col } from "react-bootstrap"
 import ChartsTooltipCountries from "../components/ChartsTooltipCountries"
 import ChartsPieLocalisation from "../components/ChartsPieLocalisation"
+import UsersAndSensorsNumber from "./UsersAndSensorsNumber"
+import WrapLocalTime from "./WrapLocalTime"
 class NavMain extends React.Component {
     render() {
         return (
@@ -19,6 +21,8 @@ class NavMain extends React.Component {
                             <Todolist />
                             <ChartsPieLocalisation />
                             <ChartsTooltipCountries />
+                            <UsersAndSensorsNumber />
+                            <WrapLocalTime />
                             
                         </Col>
                         

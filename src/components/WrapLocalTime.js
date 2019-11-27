@@ -1,0 +1,126 @@
+import React from "react"
+import LocalTime from "../components/LocalTime"
+import { Container, Row, Col } from "react-bootstrap"
+
+function WrapLocalTime() {
+
+    return (
+        <div>
+            <Container className="my-container">
+                <Row>
+                    <Col>
+                    <LocalTime
+                        continent="Etc"
+                        city="GMT+3"
+                        flag="argentina"
+                    />
+                    </Col>
+                    <Col>
+                    <LocalTime
+                        continent="Etc"
+                        city="GMT+5"
+                        flag="colombia"
+                    />
+                    </Col>
+                    <Col>
+                    <LocalTime
+                        continent="Etc"
+                        city="GMT-8"
+                        flag="china"
+                    />
+                    </Col>
+                    <Col>
+                    <LocalTime
+                        continent="Etc"
+                        city="GMT+3"
+                        flag="chile"
+                    />
+                    </Col>
+                    <Col>
+                    <LocalTime
+                        continent="Etc"
+                        city="GMT-8"
+                        flag="indonesia"
+                    />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                    <LocalTime
+                        continent="Etc"
+                        city="GMT-1"
+                        flag="norway"
+                    />
+                    </Col>
+                    <Col>
+                    <LocalTime
+                        continent="Etc"
+                        city="GMT-7"
+                        flag="thailand"
+                    />
+                    </Col>
+                    <Col>
+                    <LocalTime
+                        continent="Etc"
+                        city="GMT-1"
+                        flag="spain"
+                    />
+                    </Col>
+                    <Col>
+                    <LocalTime
+                        continent="Etc"
+                        city="GMT-3"
+                        flag="belarus"
+                    />
+                    </Col>
+                    <Col>
+                    <LocalTime
+                        continent="Etc"
+                        city="GMT-1"
+                        flag="portugal"
+                    />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                <LocalTime
+                    continent="Etc"
+                    city="GMT-7"
+                    flag="vietnam"
+                />
+                </Col>
+                <Col>
+                <LocalTime
+                    continent="Etc"
+                    city="GMT"
+                    flag="mali"
+                />
+                </Col>
+                <Col>
+                <LocalTime
+                    continent="Etc"
+                    city="GMT-1"
+                    flag="france"
+                />
+                </Col>
+                <Col>
+                <LocalTime
+                    continent="Etc"
+                    city="GMT-8"
+                    flag="malaysia"
+                />
+                </Col>
+                <Col>
+                <LocalTime
+                    continent="Etc"
+                    city="GMT-3"
+                    flag="russia"
+                />
+                </Col>
+                </Row>
+            </Container>
+        </div>
+    )
+}
+
+export default WrapLocalTime
