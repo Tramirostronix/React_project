@@ -3,7 +3,7 @@
 
 import React from 'react';
 import {ResponsiveContainer, ComposedChart, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,} from 'recharts'
-import {Container, Row, Col, Card } from "react-bootstrap"
+
 
 const data = [
   {
@@ -64,8 +64,6 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
  class ChartsTooltipCountries extends React.PureComponent {
-  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/vxq4ep63/';
-
   render() {
     return (
       //parametre de l'ensemble du graphique

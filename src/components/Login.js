@@ -1,52 +1,44 @@
 import React from "react"
-import Home from "../Home"
 import { NavLink } from "react-router-dom"
-import Banniere from "../components/Banniere"
 import { Container, Row, Col } from "react-bootstrap"
-
+import BanniereLogout from "../components/BanniereLogOut"
+import NavbarLogin from "../components/NavbarLogin"
 
 
 class Login extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            userInput: "",
-            userName: []
+
         }
     }
-
-    //permet la saisie au clavier 
-    onChange(event) {
-        console.log(event.target.value);
-        if (event.target.value === "") {
-            this.setState({ userInput: '' })
-
-        } else {
-            this.setState({ userInput: event.target.value })
-        }
-    }
-
-    ajouterTache(event) {
-        event.preventDefault()
-        this.setState({
-            userInput: "",
-            userName: [...this.state.userName, this.state.userInput],
-        })
-    }
-
     render() {
         return (
             <div>
-
-                <Banniere />
-                Bienvenu veuillez vous connecter
-
-            <input
-                    value={this.state.userInput}
-                    type="text"
-                    onChange={this.onChange.bind(this)}
-                />
-                <NavLink to="/Home"><button>Login</button></NavLink>
+                <Container className="my-container">
+                    <BanniereLogout />
+                    <Row>
+                        <Col xs="12" sm="12" md="2" lg="2">
+                            <NavbarLogin />
+                        </Col>
+                        <Col className="my-col" xs="12" sm="12" md="10" lg="10">
+                            <form>
+                            <Row className="justify-content-center login">
+                                <h1>Login</h1>
+                                </Row>  
+                                <Row className="justify-content-center passwordLogin">
+                                    <input id="center" type="text" placeholder="Username" required />
+                                </Row>
+                                <Row className="justify-content-center passwordLogin">
+                                    <input id="center" type="password" placeholder="Password" required />
+                                </Row>
+                                <Row className="justify-content-center passwordLogin">
+                                    <NavLink to="/Home"><button className="btn btn-primary btn-lg">Login</button></NavLink>
+                                </Row>
+                            </form>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         )
     }

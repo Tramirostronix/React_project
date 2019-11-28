@@ -1,22 +1,20 @@
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
-import Main from "./components/Main"
 import NavBar from "./components/Navbar"
-import Banniere from "./components/Banniere"
-import Logout from "./components/Logout"
-
-class Home extends React.Component {
+import BanniereFormulaire from "./components/BanniereFormulaire"
+import { Container,Row, Col } from "react-bootstrap"
+import FormField from "./components/FormField"
+class Formulaire extends React.Component {
     render() {
         return (
             <div>
-                <Container className="home">
-                    <div className=""><Banniere /></div>
+                 <Container>
+                            <BanniereFormulaire />
                     <Row>
                         <Col xs="12" sm="12" md="2" lg="2">
                             <NavBar />
                         </Col>
                         <Col xs="12" sm="12" md="10" lg="10">
-                            <Main />
+                            <FormField />
                         </Col>
                     </Row>
                 </Container>
@@ -25,4 +23,4 @@ class Home extends React.Component {
     }
 }
 
-export default Home
+export default Formulaire

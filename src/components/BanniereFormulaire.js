@@ -3,7 +3,7 @@ import { Image, Container, Row, Col } from "react-bootstrap"
 
 import Logout from "./Logout"
 
-class Banniere extends React.Component {
+class BanniereFormulaire extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -21,7 +21,7 @@ class Banniere extends React.Component {
                         <Row className="dashBoard">
                             <Col sm="4"  lg="1" className="d-none d-xs-block"></Col>
                             <Col xs="12" sm="8" md="9" lg="8" className="dashboard">
-                            <h2>Dashboard</h2>
+                            <h2>Formulaire</h2>
                             </Col>
                             <Col md="3" lg="3"></Col>                          
                         </Row> 
@@ -39,4 +39,4 @@ class Banniere extends React.Component {
     }
 }
 
-export default Banniere
+export default BanniereFormulaire

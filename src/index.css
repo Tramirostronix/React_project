@@ -2,6 +2,16 @@
     color: brown;
 }
 
+
+.banniere{
+    background-image: url("/cieletoile.jpg");
+    background-repeat: no-repeat;
+}
+
+.toast{
+    background: red; 
+}
+
 .my-container{
 
 border: 1px solid green; 
@@ -28,7 +38,7 @@ border: 1px solid green;
 
 
 .my-col {
-    border: 7px solid blue; 
+    border: 2px solid grey; 
 }
 
 body{
@@ -50,4 +60,26 @@ body{
     width: fit-content;
     /*margin-left: auto;
     margin-right: auto; */
+}
+
+.sizeBar {
+    font-size: 1.3rem ;
+}
+
+.paddingBar {
+    padding-top: 1.7rem;
+}
+
+.passwordLogin {
+    padding-bottom: 1.5rem;
+}
+
+.login {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.dashBoard {
+    padding-top: 4.3rem;
+    text-align: center;
 }

@@ -2,25 +2,25 @@ import React from "react"
 import Home from "../Home"
 import Formulaire from "../Formulaire"
 import { NavLink } from "react-router-dom"
-import {Container, Row, Col, Card } from "react-bootstrap"
+import {Container, Row, Col } from "react-bootstrap"
 
-class Navbar extends React.Component {
+class NavbarLogin extends React.Component {
     render() {
         return (
             <div>
-                <Container className="paddingBar ">
+                <Container className="my-container paddingBar">
                 <nav>
-                    <Row className="justify-content-center my-row ">
-                        <NavLink to="/Home"
+                    <Row className="justify-content-center">
+                        <NavLink to=""
                             activeClassName="active"
                             className="sizeBar"  
-                        >Home</NavLink>
+                        >About Us</NavLink>
                     </Row>
                     <Row className="justify-content-center">
-                        <NavLink to="/Formulaire"
+                        <NavLink to=""
                             activeClassName="active"
                             className="sizeBar"
-                        >Formulaire</NavLink>
+                        >Contact Us</NavLink>
                     </Row>
                 </nav>
                 </Container>
@@ -28,4 +28,4 @@ class Navbar extends React.Component {
         )
     }
 }
-export default Navbar
+export default NavbarLogin
