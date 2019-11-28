@@ -6,10 +6,9 @@ import {Container} from "react-bootstrap"
 class Dashboard extends React.Component{
     render() {
         return(
-            <div>
-                <Container>              
+            <div>             
                 <Routes />
-                </Container>
+
             </div>
         )
     }

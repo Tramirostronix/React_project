@@ -53,7 +53,7 @@ class Todolist extends React.Component {
         return this.state.taches.map((tache) => {
             return (
 
-                <Col md="12" className="my-col">
+                <Col md="12">
                     <div className="form-control" key={tache}>
                         {tache}<button className="btn btn-danger" onClick={this.supprimerTaches.bind(this)}>X</button>
                     </div>
@@ -74,7 +74,7 @@ class Todolist extends React.Component {
                             <h3 id='center'>Todolist</h3>
                         </Col>
                     </Row>
-                    <Row className="my-row">
+                    <Row>
                         <form>
                             <Col>
                                 <input

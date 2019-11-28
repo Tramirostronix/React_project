@@ -12,11 +12,11 @@ class Main extends React.Component {
         return (
             <div>
                 <main>
-                    <Container>
+                    <Container className="my-container">
                         <Row>
                             <Row>
                                 <Col xs="12" sm="12" md="12" lg="4">
-                                    <Row className="my-row3">
+                                    <Row>
                                         <Col xs="12" sm="12" md="12" lg="12">
                                             <UsersAndSensorsNumber />
                                         </Col>
@@ -30,12 +30,12 @@ class Main extends React.Component {
                                     <WrapLocalTime />
                                 </Col>
 
-                                <Col xs="12" sm="12" md="6" lg="4" className="my-col">
+                                <Col xs="12" sm="12" md="6" lg="4">
                                     <Todolist />
                                 </Col>
                             </Row>
                         </Row>
-                        <Row className="my-row">
+                        <Row>
                             <Col xs="12" sm="12" md="6" lg="12">
                                 <ChartsTooltipCountries />
                             </Col>

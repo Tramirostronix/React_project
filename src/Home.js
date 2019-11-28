@@ -11,11 +11,11 @@ class Home extends React.Component {
             <div>
                 <Container className="my-container">
                             <Banniere />
-                    <Row className="my-row2">
-                        <Col xs="12" sm="12" md="2" lg="2" className="my-col">
+                    <Row>
+                        <Col xs="12" sm="12" md="2" lg="2">
                             <NavBar />
                         </Col>
-                        <Col xs="12" sm="12" md="10" lg="10" className="my-col">
+                        <Col xs="12" sm="12" md="10" lg="10">
                             <Main />
                         </Col>
                     </Row>

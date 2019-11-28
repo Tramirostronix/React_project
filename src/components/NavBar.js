@@ -11,12 +11,12 @@ class Navbar extends React.Component {
             <div>
                 <Container className="my-container">
                 <nav>
-                    <Row>
+                    <Row className="justify-content-center">
                         <NavLink to="/Home"
                             activeClassName="active"
                         >Home</NavLink>
                     </Row>
-                    <Row>
+                    <Row className="justify-content-center">
                         <NavLink to="/Formulaire"
                             activeClassName="active"
                         >Formulaire</NavLink>

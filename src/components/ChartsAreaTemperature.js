@@ -22,7 +22,7 @@ class ChartsAreaTemperature extends React.PureComponent {
   render() {
     return (
       <div style={{ width: '100%', height: 300 }}>
-        <ResponsiveContainer>
+        <ResponsiveContainer className="my-container">
           <AreaChart
             data={data}
             margin={{

@@ -7,7 +7,7 @@ class Logout extends React.Component {
         return (
             <div>
                 <Container>
-                    <Row className=" vertical-center-row justify-content-center my-row">
+                    <Row className="justify-content-center">
                         <Link to="/"><button className="btn btn-danger">Logout</button></Link>
                     </Row>
                 </Container>
