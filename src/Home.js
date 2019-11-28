@@ -1,7 +1,7 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import Main from "./components/Main"
-import NavBar from "./components/Navbar"
+import NavBar from "./components/NavBar"
 import Banniere from "./components/Banniere"
 import Logout from "./components/Logout"
 

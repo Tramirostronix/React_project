@@ -74,12 +74,23 @@ body{
     padding-bottom: 1.5rem;
 }
 
-.login {
+.login, .form_login {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
 
+
 .dashBoard {
+    padding-top: 4.3rem;
+    text-align: center;
+}
+
+.add{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.nom_objet{
     padding-top: 4.3rem;
     text-align: center;
 }

@@ -1,8 +1,9 @@
 import React from "react"
-import NavBar from "./components/Navbar"
+import NavBar from "./components/NavBar"
 import BanniereFormulaire from "./components/BanniereFormulaire"
 import { Container,Row, Col } from "react-bootstrap"
 import FormField from "./components/FormField"
+
 class Formulaire extends React.Component {
     render() {
         return (
@@ -11,7 +12,7 @@ class Formulaire extends React.Component {
                             <BanniereFormulaire />
                     <Row>
                         <Col xs="12" sm="12" md="2" lg="2">
-                            <NavBar />
+                         <NavBar />
                         </Col>
                         <Col xs="12" sm="12" md="10" lg="10">
                             <FormField />
