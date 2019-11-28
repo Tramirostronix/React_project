@@ -1,7 +1,7 @@
 import React from "react"
 import { Container, Row, Col, Jumbotron } from "react-bootstrap"
 import Main from "./components/Main"
-import NavBar from "./components/NavBar"
+import Navbar from "./components/Navbar"
 import Banniere from "./components/Banniere"
 
 class Home extends React.Component {
@@ -12,9 +12,9 @@ class Home extends React.Component {
                 <Container>
                 <Banniere />                      
                     <Row>
-                    <Jumbotron fluid className="nav">
+                    <Jumbotron className="nav">
                         <Col xs="12" sm="12" md="12" lg="2">
-                            <NavBar />
+                            <Navbar />
                         </Col>
                         </Jumbotron>
                         <Col xs="12" sm="12" md="12" lg="10">
