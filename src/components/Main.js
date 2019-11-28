@@ -15,31 +15,31 @@ class Main extends React.Component {
                     <Container>
                         <Row>
                             <Row>
-                                <Col xs="12" sm="12" md="4">
+                                <Col xs="12" sm="12" md="12" lg="4">
                                     <Row className="my-row3">
-                                        <Col xs="12" sm="12" md="12">
+                                        <Col xs="12" sm="12" md="12" lg="12">
                                             <UsersAndSensorsNumber />
                                         </Col>
-                                        <Col xs="11" sm="12" md="12">
+                                        <Col xs="12" sm="12" md="12" lg="12">
                                             <ChartsPieLocalisation />
                                         </Col>
                                     </Row>
                                 </Col>
 
-                                <Col xs="" sm="12" md="4" className="d-none d-md-block">
+                                <Col sm="12" md="6" lg="4" className="d-none d-md-block">
                                     <WrapLocalTime />
                                 </Col>
 
-                                <Col xs="12" sm="12" md="4" className="my-col">
+                                <Col xs="12" sm="12" md="6" lg="4" className="my-col">
                                     <Todolist />
                                 </Col>
                             </Row>
                         </Row>
                         <Row className="my-row">
-                            <Col sm="8">
+                            <Col xs="12" sm="12" md="6" lg="12">
                                 <ChartsTooltipCountries />
                             </Col>
-                            <Col sm="4">
+                            <Col xs="12" sm="12" md="6" lg="12">
                                 <ChartsAreaTemperature />
                             </Col>
                         </Row>

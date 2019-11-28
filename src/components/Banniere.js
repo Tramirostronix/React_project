@@ -14,13 +14,13 @@ class Banniere extends React.Component {
         return (
             <div>
                 <Row className="my-row">
-                    <Col sm="4" className="my-col">
+                    <Col xs="12" sm="12" md="6" lg="5" className="my-col">
                     <img className="widthComponent" src="logo.png"/>
                     </Col>
-                    <Col sm="6" className="my-col">
+                    <Col xs="12" sm="12" md="4" lg="5" className="my-col">
                     Bienvenue sur la page principale
                     </Col>
-                    <Col sm="2" className="my-col">
+                    <Col xs="12" sm="12" md="2" lg="2" className="my-col">
                     <Logout />
                     </Col>
                 </Row>

@@ -12,10 +12,10 @@ class Home extends React.Component {
                 <Container className="my-container">
                             <Banniere />
                     <Row className="my-row2">
-                        <Col sm="2" className="my-col">
+                        <Col xs="12" sm="12" md="2" lg="2" className="my-col">
                             <NavBar />
                         </Col>
-                        <Col sm="10" className="my-col">
+                        <Col xs="12" sm="12" md="10" lg="10" className="my-col">
                             <Main />
                         </Col>
                     </Row>

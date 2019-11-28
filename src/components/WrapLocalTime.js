@@ -8,35 +8,35 @@ function WrapLocalTime() {
         <div>
             <Container className="my-container">
                 <Row>
-                    <Col>
+                    <Col md="12" lg="4">
                     <LocalTime
                         continent="Etc"
                         city="GMT+3"
                         flag="argentina"
                     />
                     </Col>
-                    <Col>
+                    <Col md="12" lg="4">
                     <LocalTime
                         continent="Etc"
                         city="GMT+5"
                         flag="colombia"
                     />
                     </Col>
-                    <Col>
+                    <Col md="12" lg="4">
                     <LocalTime
                         continent="Etc"
                         city="GMT-8"
                         flag="china"
                     />
                     </Col>
-                    <Col>
+                    <Col md="12" lg="6">
                     <LocalTime
                         continent="Etc"
                         city="GMT+3"
                         flag="chile"
                     />
                     </Col>
-                    <Col>
+                    <Col md="12" lg="6">
                     <LocalTime
                         continent="Etc"
                         city="GMT-8"
@@ -45,35 +45,35 @@ function WrapLocalTime() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col md="12" lg="4">
                     <LocalTime
                         continent="Etc"
                         city="GMT-1"
                         flag="norway"
                     />
                     </Col>
-                    <Col>
+                    <Col md="12" lg="4">
                     <LocalTime
                         continent="Etc"
                         city="GMT-7"
                         flag="thailand"
                     />
                     </Col>
-                    <Col>
+                    <Col md="12" lg="4">
                     <LocalTime
                         continent="Etc"
                         city="GMT-1"
                         flag="spain"
                     />
                     </Col>
-                    <Col>
+                    <Col md="12" lg="6">
                     <LocalTime
                         continent="Etc"
                         city="GMT-3"
                         flag="belarus"
                     />
                     </Col>
-                    <Col>
+                    <Col md="12" lg="6">
                     <LocalTime
                         continent="Etc"
                         city="GMT-1"
@@ -82,35 +82,35 @@ function WrapLocalTime() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col md="12" lg="4">
                 <LocalTime
                     continent="Etc"
                     city="GMT-7"
                     flag="vietnam"
                 />
                 </Col>
-                <Col>
+                <Col md="12" lg="4">
                 <LocalTime
                     continent="Etc"
                     city="GMT"
                     flag="mali"
                 />
                 </Col>
-                <Col>
+                <Col md="12" lg="4">
                 <LocalTime
                     continent="Etc"
                     city="GMT-1"
                     flag="france"
                 />
                 </Col>
-                <Col>
+                <Col md="12" lg="6">
                 <LocalTime
                     continent="Etc"
                     city="GMT-8"
                     flag="malaysia"
                 />
                 </Col>
-                <Col>
+                <Col md="12" lg="6">
                 <LocalTime
                     continent="Etc"
                     city="GMT-3"
