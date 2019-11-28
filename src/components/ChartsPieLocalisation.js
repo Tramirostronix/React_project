@@ -18,7 +18,7 @@ class ChartsPieLocalisation extends React.PureComponent {
   render() {
     return (
       <div style={{ width: '100%', height: 230 }}>
-        <ResponsiveContainer className="my-container"> 
+        <ResponsiveContainer> 
           <PieChart>
             <Pie dataKey="value" data={data} fill="#8884d8" label />
           </PieChart>

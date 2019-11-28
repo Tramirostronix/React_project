@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Jumbotron } from "react-bootstrap"
 
 //classe du Wiget Todolist
 
@@ -68,6 +68,7 @@ class Todolist extends React.Component {
     render() {
         return (
             <div>
+                <Jumbotron className="widget3">
                 <Container className="my-container">
                     <Row>
                         <Col>
@@ -94,6 +95,7 @@ class Todolist extends React.Component {
                         {this.afficherTaches()}
                     </div>
                 </Container>
+                </Jumbotron>
             </div >
         )
     }

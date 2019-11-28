@@ -1,11 +1,12 @@
 import React from "react"
 import LocalTime from "../components/LocalTime"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Jumbotron } from "react-bootstrap"
 
 function WrapLocalTime() {
 
     return (
         <div>
+            <Jumbotron className="widget2">
             <Container className="my-container">
                 <Row>
                     <Col md="12" lg="4">
@@ -119,6 +120,7 @@ function WrapLocalTime() {
                 </Col>
                 </Row>
             </Container>
+            </Jumbotron>
         </div>
     )
 }

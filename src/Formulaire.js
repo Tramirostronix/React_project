@@ -8,7 +8,7 @@ class Formulaire extends React.Component {
     render() {
         return (
             <div>
-                 <Container>
+                 <Container className="main-container">
                             <BanniereFormulaire />
                     <Row>
                         <Col xs="12" sm="12" md="2" lg="2">

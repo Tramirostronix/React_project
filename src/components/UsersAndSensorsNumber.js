@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Jumbotron } from "react-bootstrap"
 
 class UsersAndSensorsNumber extends React.Component {
     constructor(props) {
@@ -13,6 +13,7 @@ class UsersAndSensorsNumber extends React.Component {
     render() {
         return (
             <div>
+                <Jumbotron className="widget">
                 <Container className="my-container">
                     <Row>
                         <Col xs="12" sm="12" md="12" lg="6">
@@ -33,6 +34,8 @@ class UsersAndSensorsNumber extends React.Component {
                         </Col>
                     </Row>
                 </Container>
+                </Jumbotron>
+                
             </div>
         )
     }
