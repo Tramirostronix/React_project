@@ -1,25 +1,30 @@
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Jumbotron } from "react-bootstrap"
 import Main from "./components/Main"
 import NavBar from "./components/Navbar"
 import Banniere from "./components/Banniere"
-import Logout from "./components/Logout"
 
 class Home extends React.Component {
     render() {
         return (
             <div>
-                <Container className="home">
-                    <div className=""><Banniere /></div>
+                <Jumbotron> 
+                <Container>
+                <Banniere />                      
                     <Row>
-                        <Col xs="12" sm="12" md="2" lg="2">
+                    <Jumbotron fluid className="nav">
+                        <Col xs="12" sm="12" md="12" lg="2">
                             <NavBar />
                         </Col>
-                        <Col xs="12" sm="12" md="10" lg="10">
+                        </Jumbotron>
+                        <Col xs="12" sm="12" md="12" lg="10">
                             <Main />
                         </Col>
                     </Row>
+          
                 </Container>
+                </Jumbotron>
+                
             </div>
         )
     }

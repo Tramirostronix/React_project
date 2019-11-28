@@ -2,19 +2,9 @@
     color: brown;
 }
 
-
-.banniere{
-    background-image: url("/cieletoile.jpg");
-    background-repeat: no-repeat;
-}
-
-.toast{
-    background: red; 
-}
-
 .my-container{
 
-border: 1px solid green; 
+border: 1px solid grey; 
 
 }
 
@@ -37,8 +27,97 @@ border: 1px solid green;
 }
 
 
+.jumbotron.main{
+    background: white;
+    padding-right: 0rem;
+    padding-left: 0rem ;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem; 
+    background-size: cover;
+    background-size: 100% 100%
+}
+
+.jumbotron {
+    padding-right: 0rem;
+    padding-left: 0rem ;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem; 
+    background-size: cover;
+    background-size: 100% 100%; 
+    background-color: white;
+}
+
+.jumbotron.widget{
+    padding-right: 0rem;
+    padding-left: 0rem ;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem; 
+    background-size: cover;
+    background-size: 100% 100%; 
+    background-image: linear-gradient(to right top, #ffffff, #e5e8ed, #c7d3db, #a7bfc5, #8aabab);
+}
+
+.jumbotron.widget2{
+    padding-right: 0rem;
+    padding-left: 0rem ;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem; 
+    background-size: cover;
+    background-size: 100% 100%; 
+    background-image: linear-gradient(to right top, #671070, #414e9a, #2173a8, #4e92a8, #8aabab);
+}
+
+.jumbotron.widget3{
+    padding-right: 0rem;
+    padding-left: 0rem ;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem; 
+    background-size: cover;
+    background-size: 100% 100%; 
+    background-image: linear-gradient(to right top, #050d09, #1e3a33, #2a6c65, #2aa2a2, #12daeb);
+}
+
+.jumbotron.banniere {
+    padding:0.5rem; 
+    background-image: url("/cieletoile.jpg");
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    }
+
+.jumbotron.nav {
+    margin-left: 1rem ;
+    padding-left: 2rem;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    background-image: linear-gradient(to right top, #e3b52a, #b6cb49, #87da79, #52e5ad, #12ebdf);
+    background-repeat: repeat;
+    background-size: cover;
+    background-size: 100% 100%
+}
+
 .my-col {
-    border: 2px solid grey; 
+    border: 10px solid purple; 
 }
 
 body{

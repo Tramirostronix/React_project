@@ -8,9 +8,9 @@ class Navbar extends React.Component {
     render() {
         return (
             <div>
-                <Container className="paddingBar ">
+                <Container className="paddingBar">
                 <nav>
-                    <Row className="justify-content-center my-row ">
+                    <Row className="justify-content-center">
                         <NavLink to="/Home"
                             activeClassName="active"
                             className="sizeBar"  

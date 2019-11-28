@@ -1,8 +1,8 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 import { Container, Row, Col } from "react-bootstrap"
-import BanniereLogout from "../components/BanniereLogOut"
-import NavbarLogin from "../components/NavbarLogin"
+import BanniereLogout from "./components/BanniereLogOut"
+import NavbarLogin from "./components/NavbarLogin"
 
 
 class Login extends React.Component {
@@ -15,7 +15,7 @@ class Login extends React.Component {
     render() {
         return (
             <div>
-                <Container className="my-container">
+                <Container className="main-container">
                     <BanniereLogout />
                     <Row>
                         <Col xs="12" sm="12" md="2" lg="2">
