@@ -15,7 +15,7 @@ class UsersAndSensorsNumber extends React.Component {
             <div>
                 <Container className="my-container">
                     <Row>
-                        <Col xs="12" sm="6" md="12" lg="6">
+                        <Col xs="12" sm="12" md="12" lg="6">
                             <Row className="justify-content-center">
                                 <h2>Users</h2>
                             </Row>
@@ -23,7 +23,7 @@ class UsersAndSensorsNumber extends React.Component {
                                 <h3>{this.state.numberOfUser}</h3>
                             </Row>
                         </Col>
-                        <Col xs="12" sm="6" md="12" lg="6">
+                        <Col xs="12" sm="12" md="12" lg="6">
                             <Row className="justify-content-center">
                                 <h2>Sensors</h2>
                             </Row>

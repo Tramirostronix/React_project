@@ -68,7 +68,7 @@ class Todolist extends React.Component {
     render() {
         return (
             <div>
-                <Container>
+                <Container className="my-container">
                     <Row>
                         <Col>
                             <h3 id='center'>Todolist</h3>

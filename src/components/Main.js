@@ -17,10 +17,10 @@ class Main extends React.Component {
                             <Row>
                                 <Col xs="12" sm="12" md="12" lg="4">
                                     <Row>
-                                        <Col xs="12" sm="12" md="12" lg="12">
+                                        <Col xs="12" sm="4" md="12" lg="12">
                                             <UsersAndSensorsNumber />
                                         </Col>
-                                        <Col xs="12" sm="12" md="12" lg="12">
+                                        <Col xs="11" sm="8" md="12" lg="12">
                                             <ChartsPieLocalisation />
                                         </Col>
                                     </Row>
