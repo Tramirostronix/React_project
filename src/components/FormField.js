@@ -2,12 +2,6 @@ import React from "react"
 import { NavLink } from "react-router-dom"
 import {Container, Row, Col} from "react-bootstrap"
 
-const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' },
-  ];
-
 class FormField extends React.Component {
     constructor(props) {
         super(props)
@@ -18,8 +12,7 @@ class FormField extends React.Component {
     render() {
         return(
             <div>
-                <Container className="my-container">
-                    
+                <Container className="my-container">   
                         <form>
                             <Row className="justify-content-center add">
                                 <h1>Ajouter un objet connecté</h1>

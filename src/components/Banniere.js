@@ -28,7 +28,7 @@ class Banniere extends React.Component {
                             <Col md="3" lg="3"></Col>                          
                         </Row> 
                     </Col>
-                    <Row>
+                    <Row className="my-row">
                     <Col xs="12" sm="12" md="2" lg="2" className="dashboard">
                         <Logout />
                     </Col>
