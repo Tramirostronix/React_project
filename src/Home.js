@@ -9,7 +9,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Jumbotron> 
-                <Container>
+                <Container f>
                 <Banniere />                      
                     <Row>
                     <Jumbotron className="nav">

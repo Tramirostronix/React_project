@@ -5,7 +5,7 @@ class FooterPage extends React.Component {
         return (
             <div>
                 <footer>
-                coucou tu veux voir ma 
+                coucou tu veux voir ma barre de traction 
                 </footer>
             </div>
         )
