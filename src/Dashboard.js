@@ -7,7 +7,7 @@ class Dashboard extends React.Component{
     render() {
         return(
             <div>          
-                <Routes />
+                <Routes />    
             </div>
         )
     }
