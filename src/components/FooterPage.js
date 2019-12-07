@@ -4,8 +4,8 @@ class FooterPage extends React.Component {
     render() {
         return (
             <div>
-                <footer>
-                coucou tu veux voir ma barre de traction 
+                <footer className="footer">
+                    © Copyright {(new Date().getFullYear())} Gaétan Lajeune et Alice Borie
                 </footer>
             </div>
         )

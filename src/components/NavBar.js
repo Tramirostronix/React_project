@@ -1,8 +1,6 @@
 import React from "react"
-import Home from "../Home"
-import Formulaire from "../Formulaire"
 import { NavLink } from "react-router-dom"
-import {Container, Row, Col, Card } from "react-bootstrap"
+import {Container, Row} from "react-bootstrap"
 
 class Navbar extends React.Component {
     render() {
@@ -28,4 +26,4 @@ class Navbar extends React.Component {
         )
     }
 }
-export default Navbar;
+export default Navbar
