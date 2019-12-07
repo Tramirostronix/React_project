@@ -9,23 +9,11 @@ border: 1px solid grey;
 }
 
 .my-row {
-    border: 3px solid red; 
-}
-
-
-.my-row2 {
-    border: 5px solid purple; 
-}
-
-.my-row3 {
-    border: 5px solid yellow; 
-}
-
-.my-row4 {
-    border: 5px solid coral; 
+    display: block; 
+    margin: auto;
+    align-content: center;
     
 }
-
 
 .jumbotron.main{
     background: white;
@@ -110,15 +98,16 @@ border: 1px solid grey;
     padding-right: 0rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
-    background-image: linear-gradient(to right top, #e3b52a, #b6cb49, #87da79, #52e5ad, #12ebdf);
+    background: rgb(55,55,55);
+    color: white;
+    
+   /* background-image: linear-gradient(to right top, #e3b52a, #b6cb49, #87da79, #52e5ad, #12ebdf);
     background-repeat: repeat;
     background-size: cover;
-    background-size: 100% 100%
+    background-size: 100% 100%*/
 }
 
-.my-col {
-    border: 10px solid purple; 
-}
+
 
 body{
     margin: 20px;
@@ -133,8 +122,6 @@ body{
     text-align: center;
 }
 
-
-
 .widthComponent {
     width: fit-content;
     /*margin-left: auto;
@@ -143,10 +130,16 @@ body{
 
 .sizeBar {
     font-size: 1.3rem ;
+    text-decoration: none;
+    color: white;
+    
 }
 
 .paddingBar {
     padding-top: 1.7rem;
+    display: block;
+    background: rgb(55,55,55);
+    
 }
 
 .passwordLogin {
@@ -171,5 +164,15 @@ body{
 
 .nom_objet{
     padding-top: 4.3rem;
+    text-align: center;
+}
+
+.footer{
+    background: rgb(55,55,55);
+    color: white;
+    font-size: small;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
 }
