@@ -4,7 +4,7 @@ import Main from "./components/Main"
 import Navbar from "./components/Navbar"
 import Banniere from "./components/Banniere"
 import FooterPage from "./components/FooterPage"
-
+//
 class Home extends React.Component {
     render() {
         return (
