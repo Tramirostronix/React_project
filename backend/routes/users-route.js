@@ -1,23 +1,21 @@
-var express = require('express');
+const express = require('express');
 var router = express.Router();
 
+const _ = require('lodash');
 
-//const axios = require('axios').default;
-
-var users = [];
 
 /* GET users listing. */
-router.get('/', (req, res) => {
+router.get('/users', (req, res) => {
   res.status(200).json({users});
 });
 
 /**
- * GET one user
+ * GET one user by ID
  */
-router.get('/:id', (req, res) => {
+router.get('/:userID', (req, res) => {
   const {userID} = req.params;
   //find user in DB
-  const user = _.find(users, ["_id", userID]);
+  const user = _.find(users, [":userID", userID]);
 
   res.status(200).json({
     message: 'User found!',
