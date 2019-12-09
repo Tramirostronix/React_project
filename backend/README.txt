@@ -1,5 +1,5 @@
 1) Ouvrez compass
-2) Créez une base de donnée que vous appelerez DashboardProject
+2) Créez une base de donnée que vous appellerez DashboardProject
 3) Créer les trois collections (User,Sensor et Measure)
 4) Sélectionner la collection dnas laquelle vous souhaitez importer de la donnée dans le menu latéral gauche
 5) Dans la barre de menu supérieur, cliquez sur Collection>Import Data 
