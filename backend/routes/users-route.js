@@ -1,7 +1,14 @@
 const express = require('express');
 var router = express.Router();
-
 const _ = require('lodash');
+let mongoose= require("mongoose"); 
+let User = require("../models/user_modele"); 
+
+//POST 
+
+router.post('/add', (req, res) => {
+  res.status(200).json({users}); 
+})
 
 
 /* GET users listing. */

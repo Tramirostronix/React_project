@@ -3,9 +3,18 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
-var indexRouter = require('./routes/index');
+let mongoose= require("mongoose"); 
+let cors = require("cors"); 
+let bodyParser= require("body-parser");
+//on ajoute la database 
+let database = require("./models/db"); 
 var usersRouter = require('./routes/users-route');
+var indexRouter = require('./routes/index');
+
+const port = process.env.PORT || 4000; 
+const server= app.listen(port, () => {
+}); 
+
 
 var app = express();
 
@@ -37,5 +46,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 module.exports = app;
