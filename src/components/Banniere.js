@@ -1,5 +1,5 @@
 import React from "react"
-import { Image, Container, Row, Col, Jumbotron } from "react-bootstrap"
+import {Container, Row, Col, Jumbotron } from "react-bootstrap"
 
 import Logout from "./Logout"
 

@@ -2,7 +2,7 @@
 //http://recharts.org/en-US/examples/ComposedResponsiveContainer
 
 import React from 'react';
-import {ResponsiveContainer, PieChart, Pie, Legend} from 'recharts';
+import {ResponsiveContainer, PieChart, Pie} from 'recharts';
 
 
 const data= [
