@@ -3,6 +3,9 @@ import { Container, Row, Col, Jumbotron } from "react-bootstrap"
 
 //classe du Wiget Todolist
 
+//sources 
+//https://www.youtube.com/watch?v=7Smm9pfr828
+//https://codesandbox.io/s/pkqrj851nq
 class Todolist extends React.Component {
     constructor(props) {
         super(props)
@@ -38,10 +41,9 @@ class Todolist extends React.Component {
     }
 
 
-    supprimerTaches(event) {
-        event.preventDefault()
+    supprimerTaches(tache) {
         const array = this.state.taches
-        const index = array.indexOf(event.target.value)
+        const index = array.indexOf(tache)
         array.splice(index, 1)
         this.setState({
             taches: array
@@ -52,12 +54,17 @@ class Todolist extends React.Component {
     afficherTaches() {
         return this.state.taches.map((tache) => {
             return (
-
-                <Col md="12">
                     <div className="form-control" key={tache}>
-                        {tache}<button className="btn btn-danger" onClick={this.supprimerTaches.bind(this)}>X</button>
+                        <Row>
+                    <Col md="10">
+                        {tache}
+                        </Col>
+                        <Col md="2">
+                        <button className="btn btn-danger" onClick={this.supprimerTaches.bind(this, tache)}>X</button>
+                        </Col>
+                        </Row>
                     </div>
-                </Col>
+                
 
             )
         })
