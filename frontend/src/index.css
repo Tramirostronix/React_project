@@ -2,21 +2,12 @@
     color: brown;
 }
 
-
-
 .my-container{
 
 border: 1px solid grey; 
 
 }
 
-.my-row2 {
-    border: 3px solid purple; 
-}
-
-.my-col3 {
-    border: 2px solid yellow; 
-}
 .my-row {
     display: block; 
     margin: auto;
