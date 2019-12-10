@@ -10,6 +10,25 @@ Trello : https://trello.com/b/7Dq6TX79/projet-react
 video en cas de problème : 
 -front : https://www.loom.com/share/485e2095f36944d5be69961d17c3e139
 
+
+Sources : 
+
+//http://recharts.org/en-US/examples/ComposedResponsiveContainer
+//http://recharts.org/en-US/examples/ComposedResponsiveContainer
+//https://www.youtube.com/watch?v=7Smm9pfr828
+//https://codesandbox.io/s/pkqrj851nq
+//https://www.youtube.com/watch?v=7CqJlxBYj-M
+https://www.freecodecamp.org/forum/t/how-to-submit-form-data-to-a-restful-api-in-react/163032/3
+https://hackernoon.com/how-to-combine-a-nodejs-back-end-with-a-reactjs-front-end-app-ea9b24715032
+https://www.positronx.io/react-axios-tutorial-make-http-get-post-requests/
+https://www.youtube.com/watch?v=YYnNnhA9AQY
+https://www.google.com/search?client=firefox-b-d&q=3wschool
+
+et les librairies moment, axios, nodemon, express, bigcalendar, bootstrap, reactrouter, recharts ...
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
