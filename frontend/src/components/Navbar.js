@@ -1,6 +1,7 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 import {Container, Row} from "react-bootstrap"
+
 //
 class Navbar extends React.Component {
     render() {
@@ -14,12 +15,14 @@ class Navbar extends React.Component {
                             className="sizeBar"  
                         >Home</NavLink>
                     </Row>
+    
                     <Row className="justify-content-center">
                         <NavLink to="/Formulaire"
                             activeClassName="active"
                             className="sizeBar"
                         >Formulaire</NavLink>
                     </Row>
+                    
                 </nav>
                 </Container>
             </div>

@@ -6,7 +6,7 @@ import ShowUsers from "./components/ShowUsers"
 import FooterPage from "./components/FooterPage"
 
 //
-class Formulaire extends React.Component {
+class FormulaireShowUsers extends React.Component {
     render() {
         return (
             <div>
@@ -29,4 +29,4 @@ class Formulaire extends React.Component {
     }
 }
 
-export default Formulaire
+export default FormulaireShowUsers

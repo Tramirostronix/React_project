@@ -20,7 +20,7 @@ class Main extends React.Component {
                                         <Col xs="12" sm="4" md="12" lg="12">
                                             <UsersAndSensorsNumber />
                                         </Col>
-                                        <Col xs="11" sm="8" md="11" lg="11">
+                                        <Col className="d-none d-md-block" sm="8" md="11" lg="11">
                                             <ChartsPieLocalisation />
                                         </Col>
                                     </Row>

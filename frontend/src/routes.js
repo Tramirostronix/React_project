@@ -14,7 +14,7 @@ class Routes extends React.Component {
                 <Route path = "/Home" exact component={Home} />
                 <Route path = "/Formulaire" exact component={Formulaire} /> 
                 <Route path = "/admin" exact component={FormulaireAdmin} /> 
-                <Route path = "/admin/show" exact component={FormulaireShowUsers} /> 
+                <Route path = "/admin/show" exact component={FormulaireShowUsers} />
             </Switch>
         )
     }

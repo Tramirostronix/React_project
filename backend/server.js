@@ -21,11 +21,11 @@ connection.once('open', () => {
 
 const measuresRouter = require('./routes/measures');
 const sensorsRouter = require('./routes/sensors');
-const usersRouter = require ("./routes/users.route"); 
+const usersRouter = require('./routes/users');
 
 app.use('/Measures', measuresRouter);
 app.use('/Sensors', sensorsRouter);
-app.use("/users", usersRouter); 
+app.use('/Users', usersRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
