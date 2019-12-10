@@ -7,6 +7,8 @@ commande back  : npm run server / commande front : npm start
 
 Trello : https://trello.com/b/7Dq6TX79/projet-react
 
+video en cas de problème : 
+-front : https://www.loom.com/share/485e2095f36944d5be69961d17c3e139
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
