@@ -39,7 +39,7 @@ class FormFieldAdmin extends React.Component {
             houseSize: this.state.houseSize
         };
         console.log(users);
-        axios.post("http://localhost:3030/users/add", users)
+        axios.post("http://localhost:5000/users/add", users)
 
     this.setState({location: '', personsInHouse:"", houseSize:"" })
     }
@@ -69,25 +69,6 @@ class FormFieldAdmin extends React.Component {
                                    <button type="submit"  className="btn btn-primary btn-lg">Submit</button>
                             
                             </Row>
-                            <Row className="justify-content-center nom_objet">
-                                 <input id="center" type="text" placeholder="User ID" value={this.state.userID} onChange={this.handleUserID} required /> 
-                            </Row>
-
-                            <Row className="justify-content-center nom_objet">
-                                <input id="center"  type="text" placeholder="Location" value={this.state.location} onChange={this.handleLocation} required /> 
-                            </Row>
-
-                            <Row className="justify-content-center nom_objet">
-                                <input id="center"  type="text" placeholder="Number person in the House" value={this.state.personsInHouse} onChange={this.handlePersonsInHouse} required /> 
-                            </Row>
-
-                            <Row className="justify-content-center nom_objet">
-                                <input id="center"  type="text" placeholder="Size of the House" value={this.state.houseSize} onChange={this.handleHouseSize} required /> 
-                            </Row>
-
-                            <Row className="justify-content-center form_login">
-                                    <button type="submit"  className="btn btn-primary btn-lg">Submit</button>
-                                </Row>
                         </form>
                 </Container>   
             </div>

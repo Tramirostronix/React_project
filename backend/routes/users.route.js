@@ -8,13 +8,11 @@ router.route("/").get((req, res) => {
 }); 
 
 router.route("/add").post((req, res) =>{
-    const userID = Number(req.body.userID);
     const location = req.body.location; 
     const personsInHouse = Number(req.body.personsInHouse); 
     const houseSize = req.body.houseSize;  
 
     const newUser = new User({
-        userID, 
         location, 
         personsInHouse, 
         houseSize

@@ -25,7 +25,7 @@ class ShowUsers extends React.Component {
 
     afficherUsers() {
 
-        axios.get("http://localhost:3030/users/")
+        axios.get("http://localhost:5000/users/")
             .then(response => {
                 this.setState({
                     users: response.data
