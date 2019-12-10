@@ -45,13 +45,8 @@ class FormFieldAdmin extends React.Component {
             personsInHouse: this.state.personsInHouse, 
             houseSize: this.state.houseSize
         };
-        console.log(users);       
-        axios.post("http://localhost:4000/users/create", users) 
-        .then((res) => {
-            console.log(res.data)
-        }).catch((error) => {
-            console.log(error)
-        });
+        console.log(users);
+        axios.post("http://localhost:3030/users/add", users)
 
     this.setState({ userID: '', location: '', personsInHouse:"", houseSize:"" })
 
