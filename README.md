@@ -2,8 +2,7 @@ Borie Alice -- Lajeune Gaétan -- OCRES TD02 -- https://github.com/Tramirostroni
 
 branche valide du projet : finduprojet
 
-commande back  : npm run server
-commande front : npm start
+commande back  : npm run server / commande front : npm start
 
 Trello : https://trello.com/b/7Dq6TX79/projet-react
 
