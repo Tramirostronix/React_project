@@ -10,12 +10,12 @@ router.route('/').get((req, res) => {
 router.route('/add').post((req, res) => {
     //const userID = Number(req.body.userID);
     const personsInHouse = Number(req.body.personsInHouse);
-    const country = req.body.country;
+    const location = req.body.location;
     const houseSize = req.body.houseSize;
 
     const newUser = new User({
        // userID,
-       country,
+       location,
        personsInHouse,
        houseSize
     });

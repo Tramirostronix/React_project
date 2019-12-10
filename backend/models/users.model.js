@@ -7,7 +7,7 @@ const userSchema = new Schema({
         type: Number,
         required: true,
     },*/
-    country: {
+    location: {
         type: String,
         required: true,
     },
@@ -19,7 +19,7 @@ const userSchema = new Schema({
         type: String,
         required: true,
     },
-}
+},{timestamps: true,}
 );
 
 const User = mongoose.model('User', userSchema);
