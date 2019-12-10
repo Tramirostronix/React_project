@@ -1,6 +1,4 @@
-Borie Alice
-Lajeune Gaétan 
-OCRES TD02
+Borie Alice -- Lajeune Gaétan -- OCRES TD02 -- https://github.com/Tramirostronix/React_project.git
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
