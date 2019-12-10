@@ -3,23 +3,20 @@ import {Container, Row, Col} from "react-bootstrap"
 
 class FormFieldAdmin extends React.Component {
     constructor(props) {
-        super(props); 
-        this.state = {
-            userID: "", 
-            location:"", 
-            personsInHouse:"", 
-             houseSize:""
-        }
-        this.handleUserID=this.handleUserID.bind(this)
+        super(props)
+
+        
         this.handleLocation=this.handleLocation.bind(this)
         this.handlePersonsInHouse=this.handlePersonsInHouse.bind(this)
         this.handleHouseSize=this.handleHouseSize.bind(this)
         this.handleSubmit=this.handleSubmit.bind(this)
-       
-    }
 
-    handleUserID(event) {
-        this.setState({userID: event.target.value})
+        this.state = {
+            location:'', 
+            personsInHouse: '', 
+            houseSize:''
+           
+        }
     }
 
     handleLocation(event) {
@@ -38,12 +35,18 @@ class FormFieldAdmin extends React.Component {
     handleSubmit (event){
         event.preventDefault()
         
-        let users = {
-            userID: this.state.userID,
+        let user = {
             location: this.state.location,
             personsInHouse: this.state.personsInHouse, 
             houseSize: this.state.houseSize
-        }; 
+        }
+
+        console.log(user)
+        this.setState({
+            location: '',
+            personsInHouse: '',
+            houseSize: ''
+        })
 
     }
 
@@ -56,10 +59,6 @@ class FormFieldAdmin extends React.Component {
                             <Row className="justify-content-center add">
                                 <h1>Ajouter un Utilisateur</h1>
                             </Row>  
-                            
-                            <Row className="justify-content-center nom_objet">
-                                 <input id="center" type="text" placeholder="User ID" value={this.state.userID} onChange={this.handleUserID} required /> 
-                            </Row>
 
                             <Row className="justify-content-center nom_objet">
                                 <input id="center"  type="text" placeholder="Location" value={this.state.location} onChange={this.handleLocation} required /> 

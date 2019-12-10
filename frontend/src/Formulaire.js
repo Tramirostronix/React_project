@@ -2,8 +2,9 @@ import React from "react"
 import Navbar from "./components/Navbar"
 import BanniereFormulaire from "./components/BanniereFormulaire"
 import { Container,Row, Col, Jumbotron } from "react-bootstrap"
-import FormField from "./components/FormField"
+import FormFieldSensor from "./components/FormFieldSensor"
 import FooterPage from "./components/FooterPage"
+
 
 //
 class Formulaire extends React.Component {
@@ -18,7 +19,7 @@ class Formulaire extends React.Component {
                          <Navbar />
                         </Col>
                         <Col xs="12" sm="12" md="10" lg="10">
-                            <FormField />
+                            <FormFieldSensor />
                         </Col>
                     </Row>
                     <FooterPage />

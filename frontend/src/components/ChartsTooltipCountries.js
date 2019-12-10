@@ -3,7 +3,7 @@
 
 import React from 'react';
 import {ResponsiveContainer, ComposedChart, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,} from 'recharts'
-
+import axios from 'axios';
 
 const data = [
   {
