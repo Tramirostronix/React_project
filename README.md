@@ -1,6 +1,7 @@
 Borie Alice -- Lajeune Gaétan -- OCRES TD02 -- https://github.com/Tramirostronix/React_project.git
 
-branche valide du projet : finduprojet
+Suite à un probleme de git nous avons du creer une branche en plus et recopier tous les fichiers (d'où le retard) 
+branche valide du projet correspondant a notre travail est la dernire cree a savoir : finduprojet
 
 commande back  : npm run server / commande front : npm start
 
