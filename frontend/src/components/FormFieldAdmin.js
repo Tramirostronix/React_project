@@ -1,7 +1,7 @@
 import React from "react"
 import {Container, Row, Col} from "react-bootstrap"
 import axios from "axios"
-
+import {Link} from "react-router-dom"
 
 class FormFieldAdmin extends React.Component {
     constructor(props) {
@@ -57,19 +57,19 @@ class FormFieldAdmin extends React.Component {
                             </Row>  
 
                             <Row className="justify-content-center nom_objet">
-                                <input id="center"  type="text" placeholder="Location" value={this.state.location} onChange={this.handleLocation} required /> 
+                                <input id="center"  type="text" placeholder="Country (France)" value={this.state.location} onChange={this.handleLocation} required /> 
                             </Row>
 
                             <Row className="justify-content-center nom_objet">
-                                <input id="center"  type="text" placeholder="personInHouse" value={this.state.personsInHouse} onChange={this.handlePersonsInHouse} required /> 
+                                <input id="center"  type="text" placeholder="Nbperson (3)" value={this.state.personsInHouse} onChange={this.handlePersonsInHouse} required /> 
                             </Row>
 
                             <Row className="justify-content-center nom_objet">
-                                <input id="center"  type="text" placeholder="SizeHouse" value={this.state.houseSize} onChange={this.handleHouseSize} required /> 
+                                <input id="center"  type="text" placeholder="Size (small/medium/big)" value={this.state.houseSize} onChange={this.handleHouseSize} required /> 
                             </Row>
 
                             <Row className="justify-content-center form_login">
-                                    <button type="submit"  className="btn btn-primary btn-lg">Submit</button>
+                                   <button type="submit"  className="btn btn-primary btn-lg">Submit</button>
                                 </Row>
                         </form>
 
