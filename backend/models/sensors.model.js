@@ -5,10 +5,7 @@ const Schema = mongoose.Schema;
 var ObjectId = mongoose.Schema.Types.ObjectId;
 
 const sensorSchema = new Schema({
-    /*sensorID : {
-        type: Number,
-        required: true,
-    },*/
+
     location: {
         type: String,
         required: true,
